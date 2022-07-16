@@ -1,0 +1,459 @@
+body, button, form, input, option, select {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+body {
+    background-color: #0079bf;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+main {
+    width: calc(100% - 40px);
+    margin-top: 44px;
+    margin-left: 40px;
+    display: block;
+}
+section {
+    display: block;
+}
+button {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+}
+.Topbar_MainContainer {
+    background-color: #004269;
+    height: 44px;
+    padding: 6px 4px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Topbar_LeftMenu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Button_ButtonWrapper{
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.Button_ButtonWrapper:hover{
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color:hsla(0,0%,100%,.3);
+}
+.Button_Icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+.Topbar_MenuItem {
+    padding: 0 12px;
+    border-radius: 3px;
+    color: #fff;
+    height: 32px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    background-size: 100%;
+}
+.Topbar_MenuItem:hover {
+    padding: 0 12px;
+    border-radius: 3px;
+    color: #fff;
+    height: 32px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    background-color:hsla(0,0%,100%,.3);
+}
+.Topbar_Logo {
+    background-image: url(data:image/gif;base64,R0lGODlhOAFAAPABAAAAAP///yH5BAUAAAAAIf8LSW1hZ2VNYWdpY2sNZ2FtbWE9MC40NTQ1NQAsAAAAADgBQAAAAv6EH6nL7Q/dmbTai7PevPsPYpHSjUGIpojJtu6pxvJM1x5bjvY+vf4v4QmHxCKOYyrSgMym8gmNIpPTiBTVzAKv3K7yuKF6q9qyOGb2jddgzXktSssfy3kbLr3HrfiM/U8yA6jTd6V38VbYM2hXxxikCHVokRgJ8DjniLlgKVlJSdi5slmmSQojSjRZ8al4Wir4mpBq1Eph24c7CukWiiaLSsuzeusratzb8IGMBSw8RLzIR8u8x7A8/Sv7LBS9Sydcjcgblq0CHMxtCl5u3ikOqnzj3rwdPlvjbaCbwtlPb81fDgiG9LGqJi9EC20ADzZUuHAgOzICKSb0xM+huf6JFg1qJNjxmgwmIQNJrNiO4xeP0rKBLBkRG7yWKmU68fPwo0mY6VZmLBYq5zeSNl8mMwoiDU6kR1E2vfgkZlFwM/fJmVfVqtBxV+PVDLgzJTmfWXVK0PXn5FezIpOmZRv2KT61bTGWBWoF1yCec+XWpasU79ilf/3GrfWT5k2ubw07ZbwWciPBUP1OLYz4rmKiXgGJjbwZM9jGWkFT7vtZNDSWQzmfnvYidWXJs0eT1mw69GFVrEtnof1Vaufcl+6e0o3aMlbi65gjjw1XtW/QBn9Cf80O92Dbu1cnbr0levfnPbE/Hl5b/PnpL7WnR7++W+/i1x2PJ18evHTygP7fs6e6FXiXxTfMfPXJtp9+8VVXFoNUuOefgsllFqB5CVqYH3zSOciUhhf+JxKEnuVhIGseEcNhbiwdISJpUZWoGYj3YZghfQHyYyIhLU4WhXD9EejhhMDtl+J2GEKkw46ZkPidjDOq9yOBRUZoo3NOzqJkVz3CWKGEu/1gn5BQIvgkjVVS6aUWBTV5ppHcuRikmEeGWeOQnGQZ2JZs9vYKmWWi1SQOeJqxZoxX1hlnnoR1GKefctpJwqCw6Glom2jip2aUj3rpKKLqnSBpppR2mSaSey3H6JhhmkpQqL8xWSmfI7rVYFaBJuHqYnaReiir5PD6qaZ8+XpWl5gUCv6srMD+U+tWOfKR0SbIprqolZZ+GEuz1JaKKoDogAlrsrdWWs+Ntp744LfgjrotpJsmyq6b/PHl6bUhqqtGuO3CS6y8zaGpj4+fooJvvvH6yy+tbFrVqacC0yinC2kWXOa/l+LH7IpArjvwegceahLFEutrrb0VQ1xZVeF13N1xE4s8bcnzgfxqtZNwzLKuIj/sXawLm0wonbXhjLKuQO9cr8XYYnzOI/SqZrC7Nb9MccwIB8sQnIlC/XHOHyP9c78Xc5v1kg2P17XXN4NdctN7hk112jnbvO/RcrPddsbikqu2dSO/ia2iUuPbBc90L3224Vs3rPDKibtcOJd1Dx4YNeVAXlnu3+pszrnQJ6em97uAf9556aafXosKBQAAOw==);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 75px;
+    height: 15px;
+    padding: 8px 0;
+    cursor: pointer;
+    margin: 0;
+    position: center;
+}
+.Topbar_ArrowDown {
+    width: 10px;
+    margin-left: 6px;
+}
+.Button_DarkButton {
+    width: -webkit-max-content;
+    width: max-content;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0,0,0,.24);
+    padding: 0 12px;
+    margin-left: 12px;
+}
+.Button_DarkButton:hover {
+    width: -webkit-max-content;
+    width: max-content;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0,0,0,.24);
+    padding: 0 12px;
+    margin-left: 12px;
+    background-color:hsla(0,0%,100%,.3);
+}
+.Button_Label {
+    font-size: 14px;
+}
+.Topbar_RightMenu{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Topbar_SearchWrapper{
+    position: relative;
+    margin-right: 8px;
+}
+.Topbar_SearchInput {
+    width: 250px;
+    height: 32px;
+    border: 1px solid hsla(0,0%,100%,.25);
+    border-radius: 3px;
+    background-color: hsla(0,0%,100%,.3);
+    color: white;
+    padding-left: 30px;
+    outline: none;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-flex;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+.UserAvatar {
+    color: #172b4d;
+    background-color: #dfe1e6;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-left: 4px;
+}
+.Sidebar_SidebarWrapper {
+    width: 40px;
+    height: 100vh;
+    padding: 4px;
+    box-sizing: border-box;
+    background-color: #0480c9;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.05));
+    position: fixed;
+    top: 44px;
+    left: 0;
+    box-shadow: -6px 2px 8px 1px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.Button_White {
+    background-color: #fff;
+}
+.Button_Transparent__3x2Ek {
+    background-color: transparent;
+    margin-top: 8px;
+}
+.BoardPage_TopStrip{
+    width: 100%;
+    min-height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #f4f5f7;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+}
+.BoardPage_EarthIcon {
+    width: 26px;
+    height: 16px;
+    margin-bottom: 7 px;
+    
+}
+.BoardPage_Message {
+    margin: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #172b4d;
+    display: inline;
+}
+.BoardPage_KnowMore {
+    font-size: 14px;
+    color: #6b778c;
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 0 0 0 10px;
+}
+.BoardPage_MainContainer {
+    padding: 4px;
+}
+.BoardPage_TitleWrapper {
+    display: flex;
+    align-items: center;
+    padding: 4px 0 8px;
+}
+.BoardPage_BoardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 12px;
+    color: #fff;
+    margin: 0;
+}
+.BoardPage_StarWrapper {
+    width: 32px;
+    height: 32px;
+    color: white;
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.BoardPage_StarWrapper:hover {
+    width: 32px;
+    height: 32px;
+    color: yellow;
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.BoardPage_Separator {
+    width: 1px;
+    height: 16px;
+    background-color: hsla(0,0%,100%,.3);
+    margin: 8px;
+}
+.Button_Secondary {
+    width: -webkit-max-content;
+    width: max-content;
+    color: #fff;
+    background-color: hsla(0,0%,100%,.3);
+    padding: 0 12px;
+}
+.Button_Secondary1 .Button_Icon1 {
+    width: 16px;
+    height: 16px;
+    top: 1px;
+}
+.Button_Secondary1 {
+    width: max-content;
+    color: #fff;
+    background-color: hsla(0,0%,100%,.3);
+    padding: 0 12px;
+}
+.Button_ButtonWrapper1{
+    height: 32px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    background-color: hsla(0,0%,100%,.3);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.Button_Label1 {
+    font-size: 14px;
+    background-color: hsla(0,0%,100%,.3)
+}
+.Button_Icon1 {
+    position: relative;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.UserAvatar_DefaultAvatar__mzpr8 {
+    color: #172b4d;
+    background-color: #dfe1e6;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-left: 4px;
+}
+.BoardPage_ListWrapper {
+    width: 100%;
+    height: calc(100vh - 142px);
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.ListCard_MainContainer {
+    min-width: 272px;
+    width: 272px;
+    height: auto;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    background-color: #ebecf0ea;
+    margin: 0 4px;
+    border-radius: 3px;
+    padding: 10px 8px 8px;
+}
+.ListCard_TitleWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    overflow-y: auto;
+}
+.ListCard_Title {
+    margin: 0;
+    color: #172b4d;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 4px 8px 10px;
+}
+.NewListCard_NewListWrapper {
+    min-width: 272px;
+    width: 272px;
+    background-color: hsla(0,0%,100%,.2);
+    margin: 0 4px;
+    border-radius: 3px;
+    padding: 10px 8px 8px;
+    border-style: none;
+    cursor: pointer;
+}
+.NewListCard_NewListWrapper:hover {
+    min-width: 272px;
+    width: 272px;
+    background-color: hsla(0,0%,100%,.3);
+    margin: 0 4px;
+    border-radius: 3px;
+    padding: 10px 8px 8px;
+    border-style: none;
+    cursor: pointer;
+}
+.NewListCard_AddMoreWrapper {
+    display: inline-flex;
+    align-items: center;
+    color: #5e6c84;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2px 0;
+    cursor: pointer;
+    color: #fff;
+}
+.NewListCard_CreateFormOpen, .NewListCard_CreateFormOpen:hover {
+    background-color: #ebecf0;
+}
+.NewListCard_InputBox {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #0079bf;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+.NewListCard_ButtonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Button_Primary {
+    width: max-content;
+    color: #fff;
+    background-color: #0480c9;
+    padding: 0 12px;
+    height: 32px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.Button_Primary:hover {
+    width: max-content;
+    color: #fff;
+    background-color: #0079bf ;
+    padding: 0 12px;
+    height: 32px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.morehorizon{
+    margin-right: 0;
+}
